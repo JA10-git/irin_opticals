@@ -35,8 +35,20 @@ html {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2.2rem;          /* bigger text */
+  font-weight: 800;           /* bolder */
+  letter-spacing: 2px;        /* spacing between letters */
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-transform: uppercase;  /* makes it stand out */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* subtle glow */
+  transition: transform 0.3s ease;
 }
+
+.logo:hover {
+  transform: scale(1.05);     /* slight zoom effect */
+}
+
 
 /* Hero */
 .hero {
@@ -261,3 +273,62 @@ section {
   }
 }
 
+.coming-soon {
+  width: 100vw;                  /* take full width */
+  height: 100vh;                 /* take full height */
+  display: flex;                 /* flexbox layout */
+  flex-direction: column;        /* stack heading, text, button */
+  justify-content: center;       /* vertical center */
+  align-items: center;           /* horizontal center */
+  background: linear-gradient(135deg, #fff7f0, #fff);
+  text-align: center;
+  padding: 2rem;
+}
+
+.eyeglasses-page {
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, #fff7f0, #fff);
+}
+
+.page-title {
+  color: #ff7b00;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.glasses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* flexible columns */
+  gap: 2rem;
+  justify-content: center;   /* center items */
+  align-items: stretch;      /* make all cards equal height */
+  max-width: 1200px;         /* wider container */
+  margin: 0 auto 3rem auto;  /* center horizontally */
+  padding: 0 1rem;
+}
+
+
+
+.glass-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;        /* center content */
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.glass-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;       /* keep images neat */
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
