@@ -35,8 +35,20 @@ html {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2.2rem;          /* bigger text */
+  font-weight: 800;           /* bolder */
+  letter-spacing: 2px;        /* spacing between letters */
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-transform: uppercase;  /* makes it stand out */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* subtle glow */
+  transition: transform 0.3s ease;
 }
+
+.logo:hover {
+  transform: scale(1.05);     /* slight zoom effect */
+}
+
 
 /* Hero */
 .hero {
@@ -260,4 +272,70 @@ section {
     padding: 0.4rem 0.8rem;
   }
 }
+
+.coming-soon {
+  width: 100vw;                  /* take full width */
+  height: 100vh;                 /* take full height */
+  display: flex;                 /* flexbox layout */
+  flex-direction: column;        /* stack heading, text, button */
+  justify-content: center;       /* vertical center */
+  align-items: center;           /* horizontal center */
+  background: linear-gradient(135deg, #fff7f0, #fff);
+  text-align: center;
+  padding: 2rem;
+}
+
+.eyeglasses-page {
+  width: 100vw;                  /* take full width */
+  min-height: 100vh;             /* take full height */
+  display: flex;                 /* use flexbox */
+  flex-direction: column;        /* stack title + grid + button */
+  justify-content: center;       /* vertical centering */
+  align-items: center;           /* horizontal centering */
+  background: linear-gradient(135deg, #fff7f0, #fff);
+  text-align: center;
+  padding: 2rem;
+}
+
+.page-title {
+  color: #ff7b00;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.glasses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;       /* keep grid centered */
+  align-items: stretch;
+  width: 100%;
+  max-width: 1000px;             /* limit total width */
+  margin-bottom: 2rem;
+}
+
+.glass-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  width: 100%;
+  max-width: 280px;              /* consistent card width */
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.glass-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
 
