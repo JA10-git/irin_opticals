@@ -136,7 +136,7 @@ function Home() {
           <div className="contact-info">
             <p>
               📍 Opposite Government Hospital <br />
-              Kacheripady, North Paravur
+              Kacheripady, North Paravur,  683513
             </p>
             <p>📞 +91 9544112681</p>
             <p>✉ info@irinopticals.com</p>
@@ -163,7 +163,7 @@ function ComingSoon() {
   return (
     <div className="coming-soon">
       <h2 style={{ color: "#ff7b00", fontSize: "2rem", marginBottom: "1rem" }}>
-        🚧 This page will come in future
+        🚧 This page will be available in the future.
       </h2>
       <p style={{ marginBottom: "2rem", fontSize: "1.2rem" }}>
         Please try again later.
